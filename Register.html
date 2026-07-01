@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Register - Hope Adventures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Hope Adventures Kenya</h1>
+      <nav>
+        <a href="Home.html">Home</a>
+        <a href="Register.html">Register</a>
+        <a href="Login.html">Login</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h2>Create Account</h2>
+
+    <form action="Register.php" method="post">
+        <label>Full Name</label>
+        <input type="fullname" name="fullname" id="fullname" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" id="email" required>
+
+        <label>Phone Number</label>
+
+        <input type="telephone" name="telephone" id="telephone" required>
+
+        <label>Preferred Safari Destination</label>
+        <input type="destination"name="destination" id="destination" required>
+
+        <label>Password</label>
+        <input type="password"name="password"required>
+
+        <label>Confirm Password</label>
+        <input type="confirmpassword"name="confirmpassword" id="confirmpassword"required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already registered? <a href="login.html">Login Here</a></p>
+</div>
+
+</body>
+
+</html>

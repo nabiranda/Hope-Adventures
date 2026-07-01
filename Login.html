@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Login - Hope Adventures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Hope Adventures Kenya</h1>
+      <nav>
+        <a href="Home.html">Home</a>
+        <a href="Register.htmL">Register</a>
+        <a href="Login.html">Login</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h2>Login</h2>
+    <div id="error-message" style="color: #b00020; margin-bottom:12px; display:none;"></div>
+
+    <form method="POST" action="Login.php">
+        <label>Email Address</label>
+        <input type="email" name="email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+
+    <p>Don't have an account? <a href="register.html">Register Here</a></p>
+</div>
+
+<script>
+// Show an error message when redirected with ?error=1
+const params = new URLSearchParams(window.location.search);
+if (params.get('error') === '1') {
+    const el = document.getElementById('error-message');
+    el.textContent = 'Login failed — check your email and password.';
+    el.style.display = 'block';
+}
+</script>
+
+</body>
+</html>
